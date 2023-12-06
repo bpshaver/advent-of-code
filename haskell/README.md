@@ -4,26 +4,16 @@
 
 List comprehension and filter, refactored to use quadratic equation to find roots for polynomial.
 
-- Part One: (0.01 secs, 179,912 bytes)
+```bash
+$ ghc 23_06.hs
+$ time ./2306
+./23_06  2.04s user 0.01s system 93% cpu 2.188 total
+```
 
-- Part Two: (15.36 secs, 16,523,149,904 bytes)
+After refactoring:
 
-- Part Two (refactored): (0.00 secs, 73,224 bytes)
-
-```ghci
-GHCi, version 9.4.7: https://www.haskell.org/ghc/  :? for help
-ghci> :set +s
-ghci> :l 23_06
-[1 of 2] Compiling Main             ( 23_06.hs, interpreted )
-Ok, one module loaded.
-(0.02 secs,)
-ghci> partOne
-4403592
-(0.01 secs, 179,912 bytes)
-ghci> partTwo
-38017587
-(0.00 secs, 73,224 bytes)
-ghci> partTwo'
-38017587
-(15.36 secs, 16,523,149,904 bytes)
+```bash
+$ ghc 23_06.hs
+$ time ./2306
+./23_06  0.00s user 0.00s system 4% cpu 0.146 total
 ```
